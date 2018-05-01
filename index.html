@@ -63,8 +63,37 @@
     </li>
   </ul>
 
-  <h1>
-    <i class="fa fa-address-book"></i> Starter</h1>
+  <!-- Section - Image Slider -->
+  <section class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/resort1.jpg">
+        <div class="caption center-align">
+          <h2>Take your dream vacation</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nemo asperiores adipisci harum eaque voluptatem.</h5>
+          <a href="#" class="btn btn-large">Learn More</a>
+        </div>
+      </li>
+      <li>
+        <img src="img/resort2.jpg">
+        <div class="caption left-align">
+          <h2>We Work With All Budgets</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nemo asperiores adipisci harum eaque voluptatem.</h5>
+          <a href="#" class="btn btn-large">Learn More</a>
+        </div>
+      </li>
+      <li>
+        <img src="img/resort3.jpg">
+        <div class="caption right-align">
+          <h2>Group & Indivisual Gateways</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nemo asperiores adipisci harum eaque voluptatem.</h5>
+          <a href="#" class="btn btn-large">Learn More</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <!-- Section : Search -->
+
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -72,7 +101,16 @@
   <script>
     $(document).ready(function () {
       // Custom JS & jQuery here
+
+      //Init side nav
       $('.button-collapse').sideNav();
+      //Init Slider
+      $('.slider').slider({
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000
+      })
     });
   </script>
 </body>
