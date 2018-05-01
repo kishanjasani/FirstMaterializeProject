@@ -94,6 +94,47 @@
   </section>
   <!-- Section : Search -->
 
+  <section class="section section-search teal darken-1 white-text center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3>Search Destination</h3>
+          <div class="input-field">
+            <input type="text" placeholder="Search Destination" id="autocomplete-input" class="autocomplete white grey-text">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section : Icons -->
+  <section class="section section-icon center grey lighten-4">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large teal-text">room</i>
+            <h3>Pick Where</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, excepturi!</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large teal-text">store</i>
+            <h3>Travel Shop</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, excepturi!</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large teal-text">airplanemode_active</i>
+            <h3>Fly Cheap</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, excepturi!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -110,7 +151,19 @@
         height: 500,
         transition: 500,
         interval: 6000
-      })
+      });
+
+      $('.autocomplete').autocomplete({
+        data: {
+          Surat: null,
+          Rajkot: null,
+          Baroda: null,
+          Ahmadabad: null
+        }
+      });
+
+
+
     });
   </script>
 </body>
